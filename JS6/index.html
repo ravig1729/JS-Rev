@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions , 
+        Types of Fn , 
+        Fn Declaration , 
+        Fn Expression , 
+        Differece b/w Fun Declarations and Function Expression , 
+        Function Constructor , 
+        Immediately invoked Function Expressions (IIFE) , 
+        first class functions,
+        higher order functions, 
+        callback functions ,
+        closures.
+    </h1>
+
+    <pre><b>Functions:</b> It is a piece of code which will be used for reusability, it means write once , call multiple times or call anywhere.</pre>
+
+    <pre>Function types: <br>
+         1. Function without parameters , without return.
+         2. Function with params, without return.
+         3. Function with params, with return.
+    </pre>
+
+    <pre>
+        Function Declaration: 
+
+        function functionname ( parameter1 , parameter2, ....) {       //Function Head
+            //logic
+        }
+        functionname ( ) ;
+    </pre>
+
+    <pre>
+        //Function Expression;
+        var functionname = function ( parameter1 , parameter2) {       //Function Head
+                //logic
+        }
+        functionname ( ) ;
+    </pre>
+
+    <pre>Differece b/w Fun Declarations and Function Expression:<br>
+        Function Declarations its automatically hoisted but fun expressions not hoisted and treat as a variable so it shows undefined.
+    </pre>
+
+    <pre>Function Constructor :<br> var wish = new Function("{body}") </pre>
+
+    <pre>### Function Declaration
+        function add(num1,num2){
+        return num1+num2;
+        }
+        console.log(add(2,5))
+        
+        ### Fun Expression
+        var add2=function (num1,num2){
+            return num1+num2;
+        }
+        console.log(add2(2,10))
+        
+        ### Fun Constructor
+        var add3=new Function ("num1","num2","{return num1+num2}");
+        console.log(add3(2,15))
+    </pre>
+
+    <pre> Immediately invoked Function Expressions (IIFE)<br>
+        (function(){
+            console.log('IIFE');
+        })()
+    </pre>
+
+    <pre>first class functions:<br>1. A fun can be passed as an argument to another function <br>2. A function can be returned by another function <br>3. A function can be assigned as a value.</pre>
+
+    <pre>Callback Function: where we can pass another function as an argument an directly invoke it./ A function going to be passed as an argument to another fun and executed later.<br>
+        function submit (para){
+            para();
+            console.log('submit');
+        }
+        function copy(){
+            console.log('copy');
+        }
+        submit(copy);
+    </pre>
+
+    <pre>HigherOrder Fun: Which accepts another functiona as an argument or return a fun as a return value or both.</pre>
+
+    <pre>Closures: It is a combination of both inner and lexical environment created by the inner function. We are able to access the variable from outer scope. </pre>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
