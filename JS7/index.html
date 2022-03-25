@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays Methods - map, filter, reduce, index, push, pop, shift,  unshift, slice, some, every</h1>
+    
+    <pre>Array : we can store any kind of datatype. </pre>
+
+    <pre> Index: <br>
+    Syntax: const val4 = arr.indexOf(4);</pre>
+
+    <h3>Array Methods:</h3>
+
+    <pre>Map: Map is an method in js , which is used to transform an array ie., which will itearte through each and every element.<br>
+    syntax: const result =arr.map( x => x*2);</pre>
+
+    <pre>Filter: which checks the condition and filter all the elements in array and return you a new array.<br>
+    syntax:const result1 = arr.filter(x=> x>3);
+    </pre>
+
+    <pre>Reduce: whenever the sum of all eements in an array or whenever we want to find the max value in array.<br>
+    syntax:const total = arr.reduce((accumulator,current) => accumulator=accumulator+current,0);</pre>
+
+    <pre>Push: It will add one more value at the en dof the array.<br>
+    syntax: arr.push(7);</pre>
+
+    <pre>Pop: It removes an element from the end of the array<br>
+    Syntax:arr.pop();</pre>
+
+    <pre>Shift: It will remove first element an array.<br>
+    Syntax: arr.shift(); </pre>
+
+    <pre>Unshift : It will add one value at the first of an array.<br>
+    Synatx:arr.unshift(1);</pre>
+
+    <pre>Some and every :
+        Both these are take in a condition and check if all the elements in th array is satisfying the condition or not , they always return a boolean value.<br>
+        Syntax1:const val1 = arr.some(x => x%2 == 0); <br>
+        Syntax2: const val1 = arr.every(x => x%2 == 0);
+    </pre>
+
+    <pre>Slice:it will not manipulate the array, it will try to remove elements from an array.<br>
+        Syntax:const val3 = arr.slice(1,3); <br>
+        ## Starting Index : Element in this index will be included in the new array. <br>
+        ## End Index: Element in this before index will be included.
+
+    </pre>
+    <script src="./index.js"></script>
+</body>
+</html>
