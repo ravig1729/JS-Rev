@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Strings Methods :<br> charAt, indexOf, split, trim, string reverse, join, slice, concatenation, replace, replaceAll</h1>
+
+    <pre>String: Collection of characters .</pre>
+
+    <pre>charAt : if we want to find the characters of string with the help of indexes we will use charAt.</pre>
+
+    <pre>Split: converts string to an array , split method returns the new array, doesnot the change the original one.</pre>
+
+    <pre>join : converts array to string.</pre>
+    
+    <pre>Trim : it removes unnecessary spaces.</pre>
+
+    <pre>slice: which is used to extract datac, it will not modify the original.</pre>
+
+    <pre>Splice: Which is used for extraction and adding the elements and it will modify the original </pre>
+
+    <pre>replaceAll : replace all occurences.</pre>
+
+    <pre> Js File: <br>
+        let str='Ravi Raj Kumar';
+
+        ## Length
+        let res =  str.length;
+        console.log(res);
+        
+        ## charAt
+        let res1 =  str.charAt(7);
+        console.log(res1);
+        
+        ## indexOf
+        let res2 = str.indexOf('K');
+        console.log(res2);
+        
+        //split:
+        // let res3 = str.split("");
+        // console.log(res3);
+        
+        // //reverse
+        // let res4 = res3.reverse();
+        // console.log(res4);
+        
+        // //join
+        // let res5 = res4.join("");
+        // console.log(res3);
+        
+        let res3 = str.split("").reverse().join("");
+        console.log(res3);
+        
+        ## trim:
+        let str1 = "     Ravi Raj Kumar        ";
+        console.log(str1);
+        let res4 = str1.trim();
+        console.log(res4);
+        
+        ## slice:
+        let str2 = ["hi", "hello", "venkata", "how", "are","you"];
+        const res5 = str2.slice(1,3);
+        console.log(res5);
+        const res6 = str.slice(0,-2);
+        console.log(res6);
+        
+        ## splice:
+        const res7 = str2.splice(1,2, "venkata");
+        console.log(res7);
+        console.log(str2);
+        
+        ## concat:
+        let str3 = 'viswanadh'
+        let res8 = str3.concat(" ", str);
+        console.log(res8);
+        
+        ## replace:
+        let res9 = str.replace("Ravi", "Viswanadh");
+        console.log(res9);</pre>
+    <script src="./index.js"></script>
+</body>
+</html>
