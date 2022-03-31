@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Q 1 : Given array of students marks [23, 45, 67, 78, 91],  add 10 in all the elements of an array by using map and forEach function <br>
+            <pre>
+                var marks = [23, 45, 67, 78, 91];
+                const mmap = marks.map(x => x+10);
+                console.log(mmap);
+                const mfeach = marks.forEach((x,index) => {console.log (x+10)});
+            </pre>
+        Q 2 : Given array of student marks [23, 45, 67, 78, 91], find out how many students have got marks less than 65 and return the array.
+            <pre>
+                var studmarks = [23, 45, 67, 78, 91];
+                const gstud = studmarks.filter (x => x>65);
+                console.log(gstud);
+            </pre>
+        Q 3 : Return the sum of all the marks of students present in given array [23, 45, 67, 78, 91]
+            <pre>
+                var arr = [23, 45, 67, 78, 91];
+                var total = arr.reduce((sum,x) => sum = sum+x );
+                console.log(total);
+            </pre>
+        Q 4 : Replace ""Peter"" with ""John"" in whole string : Given String : ""Peter is a good friend of Mike. Peter is working in a IT company in Australia"".
+            <pre>
+                const str = "Peter is a good friend of Mike. Peter is working in a IT company in Australia";
+                const res = str.replaceAll("Peter", "John");
+                console.log(res);
+            </pre>
+        Q 5 : Reverse a given string ""Hello this is me"" , result should be ""me is this Hello"".
+            <pre>
+                const str1 = "Hello this is me";
+                const res1 = str1.split(" ").reverse( ).join(" ");
+                console.log(res1);
+            </pre>
+        Q 6 : Create object by all 3 possible ways and explain with example
+            <pre>
+                ## using curly braces
+                let user = {
+                    name: "Viswanadh",
+                    age: 26,
+                    job: "developer",
+                    salary: "150000"
+                }
+                
+                //we can access in these 2 ways.
+                console.log(user.name);
+                console.log(user["name"]);
+
+                ## Object constructor:
+                let myObj = new Object();
+                myObj.name = 'Viswanadh';
+                myObj.age= 17;
+                myObj.city = "sklm";
+                myObj.state = "ap";
+                
+                console.log(myObj);
+                const keys =Object.keys(myObj);
+                console.log(keys);
+                const values = Object.values(myObj);
+                console.log(values);
+
+                ## Object.create()
+                let newObj = Object.create(myObj);
+                console.log(newObj);
+            </pre>
+        Q 7 : Create an object contain name age salary as the properties, retrieve key and values in separate arrays
+            <pre>
+                let myObj = new Object();
+                myObj.name = 'Viswanadh';
+                myObj.age= 17;
+                myObj.salary= 250000;
+
+                const keys =Object.keys(myObj);
+                console.log(keys);
+
+                const values = Object.values(myObj);
+                console.log(values);
+            </pre>
+        Q 8 : Explain call bind and apply in JS
+            <pre>
+                ## call : each and every argument is passed to the fun will be passed individually.
+                user3Details.call(user3, "Walmart","Developer");
+                ## apply:each and every argument is passed to the fun will be passed in the form an array.
+                user3Details.apply(user3, ['TCS','Assitant Engineer']);
+                ## bind: it will return a new function and this new fun you can use anytime and anywhere.
+                let user3Det = user3Details.bind(user3,'Infosys','Tester');
+                user3Det()  
+            </pre>
+        Q 9 : Explain Prototype Chaining "
+            <pre>
+                we will give fun.__proto__.__proto__.__proto__ = null is a chain of prototype.
+                user3.__proto__ = user
+            </pre>
+    </h1>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
