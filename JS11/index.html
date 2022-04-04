@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading" id="head">
+        "DOM understanding and manipulation <br>
+        Accessing HTML element by tag, id, classname <br>
+        Change innerText and innerHTML <br>
+        Change styling , Create new HTML element"
+    </h1>
+
+    <h2>hello</h2>
+
+    <pre>
+    innerText --> It will returns all the text contained by an element and all its child elements.
+    innerHTML --> It will returns all the text including html tags and that is contained by an element.
+    </pre>
+
+    <button onclick="clickme()">Click</button>
+
+    <div id="header">
+        <p>hey!</p>
+        <span>How do you do?</span>
+    </div>
+    
+    <button onclick="innertext()">innerText</button>
+    <button onclick="innerhtml()">innerHTML</button>
+
+    <h1 id="parent"></h1>
+    <button onclick="create()">Create Ele</button>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
