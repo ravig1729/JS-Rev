@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES5 Vs ES6</h1>
+    <h3>Features of ES6</h3>
+    <pre><ul>
+        <li>Let, const </li>
+        <li>Arrow Func</li>
+        <pre>const func = () =>{
+            for(const i=1;i < 5;i++){
+                console.log(i);
+            }
+            console.log(i);
+            }
+            func();
+        </pre>
+        <li>For in and For of
+            <pre>for in returns the indexes of the array.
+                for(const N in cars){
+                    console.log(N);
+                }
+            </pre>
+            <pre>for of returns the values of the array.
+                for(const N of cars){
+                    console.log(N);
+                }
+            </pre>
+        </li>
+        <li>Map and Set
+            <pre>Map: value exist in key-value pairs
+                const myMap = new Map();
+                console.log(myMap);
+                myMap.set("id","1");
+                myMap.set("name","Ravi");
+                console.log(myMap);
+                console.log(myMap.get("id"));
+                console.log(myMap.size);
+                console.log(myMap.has("balu"));
+                console.log(myMap.delete("id"));
+                console.log(myMap.clear);
+            </pre>
+            <pre>Set: values are individual elements=array.
+                const mySet = new Set;
+                console.log(mySet);
+                mySet.add("Student");
+                mySet.add(true);
+                console.log(mySet);
+                console.log(mySet.has("name"));
+                console.log(mySet.size);
+                console.log(mySet.delete("Student"));
+                console.log(mySet.clear);
+            </pre>
+        </li>
+        <li>Default Parameter Values
+            <pre>function add(a, b=10){
+                console.log(a+b);
+            }
+            add(5);</pre>
+        </li>
+        <li>Rest Parameter: <pre>It is used to pass N no.of arguments in an array.</pre>
+            
+        </li>
+        <li>Symbol</li>
+    </ul></pre>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
